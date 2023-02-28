@@ -25,10 +25,15 @@ public class Snake_Ladder {
         if (winposition > PlayerPos) {
             winposition = 0;
         }
-            if (winposition > 100){
-                winposition -= randomCheck;
-            }
-            System.out.println(winposition);
+        if (winposition > 100) {
+            winposition -= randomCheck;
         }
+        System.out.println(winposition);
+        randomCheck++;
+
+        System.out.println("Total Number Of Times Die Rolled Are : " + randomCheck);
     }
+}
+
+
 
