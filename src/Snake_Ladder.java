@@ -1,6 +1,8 @@
 public class Snake_Ladder {
+    static int winposition = 100;
+
     public static void main(String[] args) {
-        System.out.println("Welcome to Snake and Ladder Simulator Program" );
+        System.out.println("Welcome to Snake and Ladder Simulator Program");
         int PlayerPos = 0;
         System.out.println("Player is at start Position " + PlayerPos);
         int randomCheck = (int) Math.floor(Math.random() * 10) % 6 + 1;
@@ -19,6 +21,9 @@ public class Snake_Ladder {
                 System.out.println("NO PLAY \nPlayer remains in the same position " + randomCheck);
                 PlayerPos += 0;
                 break;
+        }
+        if (winposition > PlayerPos) {
+            System.out.println(winposition);
         }
     }
 }
