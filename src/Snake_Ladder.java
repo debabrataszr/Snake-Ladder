@@ -23,7 +23,12 @@ public class Snake_Ladder {
                 break;
         }
         if (winposition > PlayerPos) {
+            winposition = 0;
+        }
+            if (winposition > 100){
+                winposition -= randomCheck;
+            }
             System.out.println(winposition);
         }
     }
-}
+
